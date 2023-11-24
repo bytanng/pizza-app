@@ -1,4 +1,4 @@
-# pizza-restaurant
+# Web App for a pizza restaurant
 Please note that this is a MVP and development is still on-going
 
 Project Title: SliceMeUp - A web app for ordering authentic Italian pizza.
