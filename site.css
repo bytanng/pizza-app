@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+
+body {
+		background-color: black;
+		justify-content: center; /* Center horizontally */
+		align-items: center;
+		font-family: 'Cinzel', serif;
+		margin:0
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #ccc; /* Add a border to the dropdown container */
+
+}
+
+input[type="text"]{
+	text-indent:8px
+}
+input[type="email"]{
+	text-indent:8px
+}
+input[type="password"]{
+	text-indent:8px
+}
+
+/* Style for the icon */
+.icon {
+	color: #0e0c0c;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	margin-top: 10px;
+	border: 1px solid #ccc; /* Add a border to the dropdown container */
+
+}
+
+/* Style for the links inside the dropdown */
+.dropdown-content a {
+	color: #333;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	border-color: #0e0c0c;
+}
+
+/* Change link color on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+* {box-sizing: border-box}
+
+.mySlides {
+	display: non; 
+	border-radius: 10px;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  padding-top: 88px;
+  z-index: 800;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 30px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: #CFCCC4;
+  opacity: 0.6;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+header {
+	background-color: white;
+	height: 100px;
+	margin-top: -10px;
+	font-family: 'Cinzel', serif;
+	margin-left: -8px;
+	width: 101.3%;
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+footer {
+	background-color: white;
+	height: 40px;
+	text-align: center;
+	padding-top: 10px;
+	width: 100%;
+	position: fixed;
+	font-family: 'Cinzel', serif;
+	bottom: 0;
+	font-weight: lighter;
+}
+#content{
+	padding-top: 100px;
+}
+
+#container {
+	display: flex;
+}
+
+#homeicon{
+	width: 12.5%;
+	margin-left: 150px;
+	color: black;
+	float: left;
+}
+
+#logo{
+	width: 100%;
+	align-items: left;
+	height: 100px;
+	margin-left:110px;
+	margin-top:50px;
+	display:flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+#pizzalogo{
+	align-items: Center;
+	position: relative;
+	height: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+
+}
+
+#logoname {
+	position: relative;
+	height: 25px;
+/* 	position: absolute;
+	top: 65px;
+	left: 100px; */
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carticon{
+	width: 20%;
+	padding-top: 50px;
+	color: black;
+	padding-left:80px;
+}
+
+#usericon{
+	padding-top: 50px;
+	margin-right:120px;
+	border:none;
+}
+
+#userprofile {
+	margin-left: auto;
+	
+	margin-right: auto;
+	width: 100px;
+	height: 100px;
+}
+
+#menutab {
+	width: 100%;
+	text-align: center;
+	background-color: #ebedef;
+	position: fixed;
+	align-items: center;
+	display: flex;
+	margin-top: 90px;
+    margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 900;
+	opacity: 1;
+	font-weight: bold;
+}
+
+#menubutton{
+	margin-left: 30px;
+	padding-top: 40px;
+	color: black;
+}
+
+#aboutbutton{
+	float: left;
+	margin-left: 20px;
+	margin-right: 40px;
+	color: black;
+	margin-bottom:50px;
+}
+
+#contactbutton{
+	
+	float: left;
+	margin-left: 20px;
+	margin-right: auto;
+	color: black;
+}
+
+#smallmenucontainer{
+	background-color: #ebedef;
+	padding: 32px;
+	margin: auto auto 50px auto;
+	width: 90%;
+	/* height: 1000px; */
+	z-index: 800;
+	text-align: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-image: url('images/login/italy4.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#largemenucontainer{
+	background-color: #ebedef;
+	margin: auto;
+	width: 80%;
+	height: 875px;
+	text-align: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#menuimg{
+	width:150px; 
+	border-radius: 10px; 
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	background-color:white;
+}
+
+#leftitem{
+  border-radius: 50px;
+  background: #C4C7CF;
+  padding: 40px;
+  width: 250px;
+  height: 300px;
+  float: left;
+  margin-left: 65px;
+  vertical-align: middle;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#middleitem{
+  border-radius: 10px;
+  background: lightgrey;
+  padding: 35px;
+  margin: 12px 12px 30px 80px;
+  width: 250px;
+  height: 320px;
+  float: left;
+  /* margin: auto; */
+  vertical-align: middle;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#rightitem{
+  border-radius: 50px;
+  background: #C4C7CF;
+  padding: 40px;
+  width: 250px;
+  height: 300px;
+  float: left;
+  margin-right: 65px;
+  vertical-align: middle;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#menurow {
+	display: grid;
+ 	grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+	margin-top: 40px;
+}
+
+@media (max-width: 1280px) {
+	#menurow {
+	  grid-template-columns: auto auto auto;
+	}
+  }
+  
+@media (max-width: 990px) {
+	#menurow {
+	  grid-template-columns: auto auto;
+	}
+  }
+
+#itemdesc {
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+}
+
+#selectbutton {
+	background-color: #B0D9B1;
+	margin: auto;
+	width: 60px;
+	height: 20px;	
+  	font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 10px;
+}
+
+#confirmation {
+	margin: auto;
+	width: 85%;
+	height: 440px;
+	background-color: #EBEDEF;
+	padding: 25px 180px 50px 180px;
+	align-items: center;
+}
+
+#checkout {
+	margin: auto;
+	width: 100%;
+	height: 800px;
+	background-color: white;
+	align-items: center;
+}
+
+#contact {
+	margin: auto;
+	width: 80%;
+	background-color: #EBEDEF;
+	padding: 0px 40px 0px 40px;
+	align-items: center;
+	margin-bottom:20px;
+}
+
+#contactus  {
+	width: 500px;
+	height: 600px;
+	background-color: white;
+	padding: 45px 20px 50px 40px;
+	margin-left:180px;
+	align-items: center;
+	float: left;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	
+}
+
+#feedback {
+	margin-right:180px;
+	width: 500px;
+	height: 600px;
+	background-color: white;
+	padding: 45px 40px 50px 50px;
+	align-items: center;
+	float: right;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#cart {
+	margin: auto;
+	width: auto;
+	height: auto;
+	background-color: white;
+	padding: 25px 60px 50px 60px;
+	align-items: center;
+
+}
+
+#itempage {
+	margin: auto;
+	width: 85%;
+	height: auto;
+	background-color: white;
+	vertical-align: top;
+	padding:50px;
+	display: flex;
+	margin-right:90px;
+}
+
+#iteminfo {
+	float: left;
+	vertical-align: top;
+	padding-left: 40px;
+	padding-right: 15px;
+	width: 340px;
+}
+
+#itemlabel {
+	float: left;
+	font-size: 12px;
+	
+}
+
+#itemqty {
+	float: right;
+	text-align: right;
+	font-size: 12px;
+}
+
+button {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    background-color: green;
+    color: honeydew;
+}
+ 
+/*apply hover effect to button tag*/
+ 
+button:hover {
+    background-color: green;
+    color: grey;
+}
+
+#ordered{
+	font-size: 14px;
+	width: 66%;
+}
+
+#totalcost{
+	font-size: 14px;
+	margin-left: 40px;
+	width: 33%;
+}
+
+#icons {
+	color: black;
+	width: 20%;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#login {
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	padding:80px;
+	width: 350px;
+	height: 400px;
+	background-color: white;
+	vertical-align: center;
+	padding-top:20px;
+	text-align: center; /* Center text horizontally if needed */
+	border-radius:8px;
+	border:#0e0c0c;
+}
+
+#signup {
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	width: 350px;
+	padding:50px;
+	height: 450px;
+	background-color: white;
+	vertical-align: center;
+	text-align: center; /* Center text horizontally if needed */
+	border-radius:8px;
+	border:#0e0c0c;
+}
+
+#loginicon{
+	width: 10%;
+	float: right;
+	padding-top: 30px;
+	padding-left: 20px;
+	color: black;
+}
+
+#categories {
+	width: 100%;
+	text-align: center;
+	background-color: #dae1f7;
+	color: white;
+	position: fixed;
+	align-items: center;
+	display: flex;
+	margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	z-index: 900;
+	opacity: 1;
+	font-weight: bold;
+}
+
+#catcombo{
+	margin-left: auto;
+	margin-right: 0px;
+	color: white;
+}
+
+#catpizza{
+	float: left;
+	margin-left: 130px;
+	margin-right: 65px;
+	color: white;
+}
+
+#catsides{
+	
+	float: left;
+	margin-left: 65px;
+	margin-right: 130px;
+	
+	color: white;
+}
+#catdrinks{
+	
+	float: left;
+	margin-left: 0px;
+	margin-right: auto;
+	color: white;
+}
+
